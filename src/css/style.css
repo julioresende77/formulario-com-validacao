@@ -1,0 +1,103 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-repeat.jpg);
+    background-size: contain;
+    height: 100vh;
+}
+
+.container .informacoes {
+    color: #ffffff;
+    width: 300px;
+    margin-right: 73px;
+}
+
+.informacoes .titulo {
+    font-weight: 900;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.informacoes .paragrafo {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.container .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 340px;
+    height: 378px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.formulario form .info {
+    border-radius: 5px;
+    border: solid 1px #000000;
+    padding: 10px;
+}
+
+.formulario form .info::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+
+.formulario textarea {
+    width: 298px;
+    height: 100px;
+    resize: none;
+}
+
+.formulario textarea::placeholder {
+    font-weight: 700;
+    font-size: 15px;
+    color: #A8A8A8;
+}
+
+.formulario .alerta {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+#btnEnviar {
+    padding: 12px 125px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3CCC87;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Estilização para JavaScript */
+
+.formulario form .info.invalido,
+textarea.invalido {
+    border: 1px solid red;
+}
+
+.formulario form .info.valido,
+textarea.valido {
+    border: 1px solid #00e413;
+}
+
+.formNull {
+    color: #F52E2E;
+    font-size: 8px;
+    font-weight: 400;
+    height: 0;
+}
